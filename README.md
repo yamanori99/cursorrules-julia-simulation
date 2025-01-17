@@ -45,6 +45,8 @@
 
 ## 注意事項
 
+- 「Include .cursorrules file」設定がオフになっていると、`.cursorrules`が読み込まれないのでご注意ください。
+![cursorrules設定](images/cursorrules_option.png)
 - Rules for AIに矛盾する内容の記載があると効果が減少します。Rules for AIの記載内容を十分にご確認ください。
 
 ## ライセンス
