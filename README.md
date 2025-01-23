@@ -1,4 +1,4 @@
-# .cursorrules サンプル
+# .cursorrules 「v5」
 
 このリポジトリは、Cursor用のカスタムインストラクション（`.cursorrules`）を管理するためのものです。
 過去のバージョンはX（Twitter）で公開し、ご利用いただいた方々からご好評をいただきましたが、SNSでは時間の経過とともに発見が難しくなるため、今後はこのGitHubリポジトリで公開していく予定です。
@@ -7,7 +7,6 @@
 ## 前提
 
 - この`.cursorrules`は、Cursor Composer agent利用に最適化したものです
-    - `.windsurfrules`にファイル名を変更して、Windsurf Cascadeでも利用可能です。
 - Cursor Composer agentが自走（人の介入を受けずに自律処理）ができる前提として、Yoloモードの許可コマンドを適切に設定する必要があります。
 
 ## 概要
@@ -32,7 +31,7 @@
 
 1. `.cursorrules`ファイルをプロジェクトのルートディレクトリに保存します。
     - 細かい制御を行いたい場合、v5をご利用ください：[v5/.cursorrules](v5/.cursorrules)
-    - Composerの分析力、自走力がアップすれば十分な場合、v1をご利用ください：[v1/.cursorrules](v1/.cursorrules)
+    - 分析力、自走力がアップすれば十分な場合、v1をご利用ください：[v1/.cursorrules](v1/.cursorrules)
 1. v5の技術スタック、APIバージョン管理、プロジェクト構成は記載例です。ご自身の環境に合わせてカスタマイズしてください。
     - Cursorでの編集を推奨。
     - 例：node系のプロジェクトであれば、コマンド+Kでpackage.jsonを参照して書かせると楽です。
