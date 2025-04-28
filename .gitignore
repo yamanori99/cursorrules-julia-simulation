@@ -1,1 +1,23 @@
+# Julia compilation artifacts
+*.ji
+*.so
+*.dylib
+*.dll
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE settings and caches (common practice)
+.vscode/
+.idea/
+*.iml
+# Add other common IDE files if needed
+
+# Julia specific environments activated in Pkg (recommended)
+.julia/

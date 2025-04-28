@@ -1,44 +1,28 @@
-# ディレクトリ構成（※本記載は記入例です-プロジェクトに合わせて内容を更新してください-）
+# ディレクトリ構造 (プロジェクトに合わせて調整してください)
 
-以下のディレクトリ構造に従って実装を行ってください：
+プロジェクトの規模や性質に合わせて変更可能な、一般的なディレクトリ構造の例です。
 
 ```
 /
-├── app/                          # Next.jsのアプリケーションディレクトリ
-│   ├── api/                      # APIエンドポイント
-│   │   └── [endpoint]/
-│   │       └── route.ts
-│   ├── components/               # アプリケーションコンポーネント
-│   │   ├── ui/                   # 基本UI（button, card等）
-│   │   └── layout/               # レイアウト関連
-│   ├── hooks/                    # カスタムフック
-│   ├── lib/                      # ユーティリティ
-│   │   ├── api/                  # API関連処理
-│   │   │   ├── client.ts         # 変更禁止: AIモデル設定
-│   │   │   ├── types.ts          # 変更禁止: 型定義
-│   │   │   └── config.ts         # 変更禁止: 環境設定
-│   │   └── utils/                # 共通関数
-│   ├── styles/                   # スタイル定義
-│   ├── favicon.ico               # ファビコン
-│   ├── globals.css               # グローバルスタイル
-│   ├── layout.tsx                # ルートレイアウト
-│   └── page.tsx                  # ホームページ
-├── public/                       # 静的ファイル
-├── node_modules/                 # 依存パッケージ
-├── .git/                         # Gitリポジトリ
-├── .cursor/                      # Cursor設定
-├── package.json                  # プロジェクト設定
-├── package-lock.json             # 依存関係ロックファイル
-├── tsconfig.json                 # TypeScript設定
-├── next-env.d.ts                 # Next.js型定義
-├── next.config.ts                # Next.js設定
-├── postcss.config.mjs            # PostCSS設定
-├── eslint.config.mjs             # ESLint設定
-└── .gitignore                    # Git除外設定
+├── src/                          # ソースコード
+│   ├── MyProject.jl              # メインモジュール (プロジェクト名に変更)
+│   ├── types.jl                  # 共通の型定義
+│   └── utils.jl                  # ユーティリティ関数
+│   # ... (必要に応じてサブディレクトリやファイルを追加)
+├── test/                         # テストコード
+│   ├── runtests.jl               # テスト実行ファイル
+│   └── # ... (テストファイル)
+├── scripts/                      # 実行用スクリプト
+│   └── run_script.jl             # スクリプト例
+├── data/                         # データ (入力/出力)
+│   ├── input/
+│   └── output/
+├── docs/                         # ドキュメント
+│   ├── make.jl
+│   └── src/
+├── Project.toml                  # プロジェクト設定と依存関係
+├── Manifest.toml                 # 依存関係の正確なバージョン情報
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
-
-### 配置ルール
-- UIコンポーネント → `app/components/ui/`
-- APIエンドポイント → `app/api/[endpoint]/route.ts`
-- 共通処理 → `app/lib/utils/`
-- API関連処理 → `app/lib/api/`
